@@ -1,0 +1,232 @@
+﻿@model Website.Models.BlogViweModel
+@{
+    ViewData["Title"] = Model.Blog.MetaTitle;
+    ViewData["MetaDescription"] = Model.Blog.MetaDescription;
+    ViewData["CanonicalUrl"] = Model.CanonicalUrl;
+}
+
+<div class="blog-details-header">
+    <div class="header-container">
+        <div class="breadcrumbs">
+            <a href="/">صفحه اصلی</a>/
+            <span>مقالات</span>/
+            <span>@Model.Blog.Title</span>
+        </div>
+        <div class="title">@Model.Blog.Title</div>
+        <p>@Html.Raw(@Model.Blog.BodyOverview)</p>
+        <div class="blog-header-details row">
+            <div class="col-6 col-md-3">
+                <span class="my-icon calender"></span>
+                <span class="desc">@Model.Blog.DisplayDateTime</span>
+            </div>
+            <div class="col-6 col-md-3">
+                <span class="my-icon pen"></span>
+                <span class="desc">@Model.Blog.Writer</span>
+            </div>
+            <div class="col-6 col-md-3">
+                <span class="my-icon eye"></span>
+                <span class="desc">@Model.Blog.Views بازدید</span>
+            </div>
+            <div class="col-6 col-md-3">
+                <span class="my-icon folder"></span>
+                <span class="desc">@Model.Blog.Category</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="service-details-content">
+    @Html.Raw(Model.Blog.Body)
+</div>
+
+<div class="home-numerical-report">
+    <div class="numerical-report-title">
+        <div class="col-12 col-md-6">
+            <h2>تجربه‌ی متخصصین ما در یک نگاه</h2>
+        </div>
+        <div class="col-12 col-md-6">
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه میباشد.</p>
+        </div>
+    </div>
+    <div class="numerical-report-body">
+        <div class="numerical-report-item col-12 col-md-3">
+            <div class="ht-card patient-done">
+                <div class="count">+2584</div>
+                <h2>بیمار را تا کنون درمان کرده‌ایم!</h2>
+                <p>تعداد بیماران بهبود یافته در موسسه همراه طب</p>
+            </div>
+        </div>
+        <div class="numerical-report-item col-12 col-md-3">
+            <div class="ht-card folder">
+                <div class="count">+2584</div>
+                <h2>پرونده پرستاری ثبت کرده‌ایم!</h2>
+                <p>تعداد درخواست‌های ثبت شده تا کنون</p>
+            </div>
+        </div>
+        <div class="numerical-report-item col-12 col-md-3">
+            <div class="ht-card nurse">
+                <div class="count">+2584</div>
+                <h2>سال تجربه میانگین پرستاران ما!</h2>
+                <p>میانگین تجربه پرستاران ما بر حسب سال</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="home-trust-reason background-white">
+    <div class="trust-reason-title">
+        <div class="col-12 col-md-6">
+            <h2>چرا باید ما را انتخاب کنید؟</h2>
+        </div>
+        <div class="col-12 col-md-6">
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه میباشد.</p>
+        </div>
+    </div>
+    <div class="trust-reason-body">
+        <div class="trust-reason-item col-12 col-md-3">
+            <div class="ht-card history">
+                <div class="background">
+                    1
+                </div>
+                <img src="~/image/globe.png" />
+                <h2>سابقه</h2>
+                <p>بیش از یک دهه سابقه فعالیت در زمینه ارائه خدمات و مراقبتهای بالینی در منزل با کادر مجرب پزشکی و پرستاری بیمارستانی با بیش از ۵ سال تجربه.</p>
+            </div>
+        </div>
+        <div class="trust-reason-item col-12 col-md-3">
+            <div class="ht-card quality">
+                <div class="background">
+                    2
+                </div>
+                <img src="~/image/award.png" />
+                <h2>کیفیت</h2>
+                <p>اعزام پزشکان، فیزیوتراپیست ها، پرستاران و مراقبین مجرب و متعهد، مطابق با استانداردهای علمی روز و قوانین و مقررات جاری کشور.</p>
+            </div>
+        </div>
+        <div class="trust-reason-item col-12 col-md-3">
+            <div class="ht-card trust">
+                <div class="background">
+                    3
+                </div>
+                <img src="~/image/thumbs-up.png" />
+                <h2>اعتماد</h2>
+                <p>مراقبت و پرستاری از سالمند، کودک و یا بیمار شما امر خطیری است که مرکز پرستاری همراه طب با سابقه چندین ساله اعتماد کاربران خود را جلب نموده است.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="home-services">
+    <div class="home-services-title">
+        <div class="col-12 col-md-7">
+            <h2>خدمات پزشکی و پرستاری</h2>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+        </div>
+        <div class="col-12 col-md-5">
+            <button class="btn btn-all-services"><span class="all-services-text">مشاهده همه خدمات</span><span class="my-icon arrow-left"></span></button>
+        </div>
+    </div>
+    <div class="row justify-content-between service-items-row">
+        @for (int i = 0; (i < 3 && i < Model.LastSixDuties.Count); i++)
+        {
+            <div class="service-item col-12 col-md-4">
+                <div class="service-label">نیروی تخصصی</div>
+                <img src="/image/hospital.png" />
+                <h2>@Model.LastSixDuties[i].Title</h2>
+                <p>@Html.Raw(Model.LastSixDuties[i].BodyOverview)</p>
+                <button class="btn btn-service-info"><span class="service-info-text">بررسی و ثبت درخواست</span><span class="arrow-left-icon"></span></button>
+            </div>
+        }
+    </div>
+    @if (Model.LastSixDuties.Count > 3)
+    {
+        <div class="row justify-content-between service-items-row">
+            @for (int i = 3; (i < 6 && i < Model.LastSixDuties.Count); i++)
+            {
+                <div class="service-item col-12 col-md-4">
+                    <div class="service-label">نیروی تخصصی</div>
+                    <img src="/image/hospital.png" />
+                    <h2>@Model.LastSixDuties[i].Title</h2>
+                    <p>@Html.Raw(Model.LastSixDuties[i].BodyOverview)</p>
+                    <button class="btn btn-service-info"><span class="service-info-text">بررسی و ثبت درخواست</span><span class="arrow-left-icon"></span></button>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+<div class="home-contact-us">
+    <div class="contact-us-body">
+        <div class="col-12 col-md-5 title">
+            <h2>راه‌های ارتباطی با ما</h2>
+            <p>شنبه تا چهارشنبه از ساعت ۸ صبح تا ۵ بعد از ظهر، و پنجشنبه از ساعت ۸ صبح تا ۲ بعد از ظهر درخدمت شما هستیم...</p>
+        </div>
+        <div class="col-12 col-md-7 row">
+            <div class="col-12 col-md-6 details-card">
+                <div class="icon-container"><img src="/image/phone.svg" class="icon" /></div>
+                <div class="details">
+                    <div>شماره تماس</div>
+                    <a href="tel:09196583880">09196583880</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 details-card">
+                <div class="icon-container"><img src="/image/live support agent headset.svg" class="icon" /></div>
+                <div class="details">
+                    <div>پشتیبانی</div>
+                    <a href="tel:09196583880">09196583880</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 details-card">
+                <div class="icon-container"><img src="/image/mail.svg" class="icon" /></div>
+                <div class="details">
+                    <div>ایمیل</div>
+                    <a href="mailto:milad@gmail.com">milad@gmail.com</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 details-card">
+                <div class="icon-container"><img src="/image/map-pin.svg" class="icon" /></div>
+                <div class="details">
+                    <div>آدرس</div>
+                    <a>مشاهده موقیعت مکانی</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="home-latest-blogs">
+    <div class="latest-blogs-title">
+        <div class="col-12 col-md-7">
+            <h3>آخرین مقالات منتشر شده</h3>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+        </div>
+        <div class="col-12 col-md-5">
+            <button class="btn btn-all-blogs"><span class="all-blogs-text">مشاهده همه مقالات</span><span class="my-icon arrow-left"></span></button>
+        </div>
+    </div>
+    <div class="latest-blogs-body">
+
+        @for (int i = 0; (i < 3 && i < Model.LastTreeBlogs.Count); i++)
+        {
+            <div class="latest-blogs-item col-12 col-md-3">
+                <a href="@Model.LastTreeBlogs[i].Url">
+                    <div class="lb-card" style="background-image:linear-gradient(180deg, rgba(0, 0, 0, 0) 42.4%, rgba(0, 0, 0, 0.8) 100%), url('/image/blog-image.webp')">
+                        <div class="blog-title">
+                            @Model.LastTreeBlogs[i].Title
+                        </div>
+                        <div class="blog-details">
+                            <div class="blog-date">
+                                <img src="~/image/calendar.svg" />
+                                <span> @Model.LastTreeBlogs[i].DaysAgoString</span>
+                            </div>
+                            <div class="blog-view">
+                                <img src="~/image/eye.svg" />
+                                <span>2,580 بازدید</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+</div>

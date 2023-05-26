@@ -1,0 +1,113 @@
+﻿@using Anil.Core.Domain.Duties;
+@using Anil.Services.Duties;
+@using Anil.Services.Seo;
+@using Anil.Web.Framework.Infrastructure.Mapper.Extensions;
+@using Website.Area.Api.ViewModel.Duties;
+@inject IDutyService dutyService;
+@inject IUrlRecordService urlRecordService;
+@{
+    var duties = dutyService.GetAllList().ToList().ToModel<Duty, DutyViewModel>().Select(s =>
+            {
+                s.Url = urlRecordService.GetActiveSlug(s.Id, "Duty");
+                return s;
+            }).ToList();
+}
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="/image/Logo.png"/></a>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">صفحه اصلی</a>
+                    </li>
+                    @foreach (var item in duties.Where(p => p.ParentId == null))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="@item.Url">@item.Title</a>
+                            @{
+                                var children = duties.Where(p => p.ParentId == item.Id);
+                            }
+                            @if (children.Any())
+                            {
+                                <ul class="dropdown-menu submenu1">
+                                    @foreach (var item2 in children)
+                                    {
+                                        <li> <a class="dropdown-item" href="@item2.Url"> @item2.Title </a>
+                                        @{
+                                            var children2 = duties.Where(p => p.ParentId == item2.Id);
+                                        }
+                                        @if (children2.Any())
+                                        {
+                                            <ul class="submenu dropdown-menu">
+                                                @foreach (var item3 in children2)
+                                                {
+                                                    <li><a class="dropdown-item" href="@item3.Url">@item3.Title</a></li>
+                                                }
+                                            </ul>
+                                        }
+                                        </li>
+                                    }
+                                </ul>
+                            }
+                        </li>
+                    }
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Blog" asp-action="Index">مقالات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">تماس با ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">درباره ما</a>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="btn btn-login">ورود/ثبت نام</button>
+            <button class="btn btn-submit ms-2">ثبت درخواست</button>
+        </div>
+    </nav>
+</header>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // make it as accordion for smaller screens
+        if (window.innerWidth < 992) {
+
+            // close all inner dropdowns when parent is closed
+            document.querySelectorAll('.navbar .dropdown').forEach(function (everydropdown) {
+                debugger;
+                everydropdown.addEventListener('hidden.bs.dropdown', function () {
+                    // after dropdown is hidden, then find all submenus
+                    this.querySelectorAll('.submenu').forEach(function (everysubmenu) {
+                        // hide every submenu as well
+                        everysubmenu.style.display = 'none';
+                    });
+                })
+            });
+
+            document.querySelectorAll('.navbar-nav a,.dropdown-menu a').forEach(function (element) {
+                element.addEventListener('click', function (e) {
+                    let nextEl = this.nextElementSibling;
+                    if (nextEl && (nextEl.classList.contains('submenu') || nextEl.classList.contains('submenu1'))) {
+                        // prevent opening link if link needs to open dropdown
+                        e.preventDefault();
+                        if (nextEl.style.display == 'block') {
+                            nextEl.style.display = 'none';
+                        } else {
+                            nextEl.style.display = 'block';
+                        }
+
+                    }
+                });
+            })
+        }
+        // end if innerWidth
+    });
+    // DOMContentLoaded  end
+</script>

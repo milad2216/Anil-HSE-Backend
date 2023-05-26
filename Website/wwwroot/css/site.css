@@ -1,0 +1,2118 @@
+@font-face {
+  font-family: "IRANYekan";
+  src: url("../font/IRANYekan-Black.eot");
+  src: url("../font/IRANYekan-Black.eot?#iefix") format("embedded-opentype"),
+    url("../font/IRANYekan-Black.woff2") format("woff2"),
+    url("../font/IRANYekan-Black.woff") format("woff"),
+    url("../font/IRANYekan-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANYekan ExtraBlack";
+  src: url("../font/IRANYekan-ExtraBlack.eot");
+  src: url("../font/IRANYekan-ExtraBlack.eot?#iefix")
+      format("embedded-opentype"),
+    url("../font/IRANYekan-ExtraBlack.woff2") format("woff2"),
+    url("../font/IRANYekan-ExtraBlack.woff") format("woff"),
+    url("../font/IRANYekan-ExtraBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANYekan";
+  src: url("../font/IRANYekan-Bold.eot");
+  src: url("../font/IRANYekan-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../font/IRANYekan-Bold.woff2") format("woff2"),
+    url("../font/IRANYekan-Bold.woff") format("woff"),
+    url("../font/IRANYekan-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANYekan";
+  src: url("../font/IRANYekan-Light.eot");
+  src: url("../font/IRANYekan-Light.eot?#iefix") format("embedded-opentype"),
+    url("../font/IRANYekan-Light.woff2") format("woff2"),
+    url("../font/IRANYekan-Light.woff") format("woff"),
+    url("../font/IRANYekan-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANYekan";
+  src: url("../font/IRANYekan-ExtraBold.eot");
+  src: url("../font/IRANYekan-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("../font/IRANYekan-ExtraBold.woff2") format("woff2"),
+    url("../font/IRANYekan-ExtraBold.woff") format("woff"),
+    url("../font/IRANYekan-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANYekan";
+  src: url("../font/IRANYekan-Medium.eot");
+  src: url("../font/IRANYekan-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../font/IRANYekan-Medium.woff2") format("woff2"),
+    url("../font/IRANYekan-Medium.woff") format("woff"),
+    url("../font/IRANYekan-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANYekan";
+  src: url("../font/IRANYekan.eot");
+  src: url("../font/IRANYekan.eot?#iefix") format("embedded-opentype"),
+    url("../font/IRANYekan.woff2") format("woff2"),
+    url("../font/IRANYekan.woff") format("woff"),
+    url("../font/IRANYekan.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANYekan";
+  src: url("../font/IRANYekan-Thin.eot");
+  src: url("../font/IRANYekan-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../font/IRANYekan-Thin.woff2") format("woff2"),
+    url("../font/IRANYekan-Thin.woff") format("woff"),
+    url("../font/IRANYekan-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  font-size: 14px;
+  font-family: "IRANYekan";
+  font-style: normal;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10001;
+}
+
+body > .container {
+  margin-top: 67px;
+}
+
+main {
+  min-height: 500px;
+}
+
+.btn {
+  font-family: IRANYekan;
+  line-height: 26px;
+  letter-spacing: 0em;
+}
+
+.navbar-nav {
+  justify-content: space-around;
+}
+
+.nav-item a {
+  font-family: "IRANYekan";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.9999px;
+  line-height: 26px;
+  /* identical to box height */
+  /* Neutral/G4 */
+
+  color: #757575 !important;
+}
+
+.nav-item a:hover {
+  color: #3859ff !important;
+}
+
+.btn-login {
+  height: 48px;
+  width: 151px;
+  left: 265px;
+  top: 24px;
+  border-radius: 6px;
+  background: #f0f4ff;
+  color: #3859ff;
+}
+
+.btn-submit {
+  height: 48px;
+  width: 165px;
+  left: 88px;
+  top: 24px;
+  border-radius: 6px;
+  background: #3859ff;
+  color: #ffffff;
+}
+.blue-dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 1px;
+  background: #667fff;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.footer {
+  position: relative;
+  margin-top: 50px;
+}
+
+.footer .seprator {
+  background: #202f5c;
+  height: 2px;
+  width: 80%;
+  right: 10%;
+  position: absolute;
+}
+
+.footer .seprator .seprator-up {
+  height: 56px;
+  width: 56px;
+  border-radius: 50px;
+  background: #00bf9f;
+  position: absolute;
+  top: -28px;
+  right: calc(50% - 28px);
+}
+
+.footer .seprator .seprator-up img {
+  top: 16px;
+  position: absolute;
+  right: 16px;
+}
+
+.footer .footer-copy-right {
+  display: grid;
+  color: rgba(255, 255, 255, 0.8);
+  height: 40px;
+  align-content: center;
+  text-align: center;
+  font-family: "IRANYekan";
+  background: #202f5c;
+  border-radius: 50px 50px 0 0;
+}
+
+.footer .footer-links {
+  font-family: "IRANYekan";
+  background: #fafbff;
+  padding: 25px 0 50px 0;
+}
+
+.footer .footer-links ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.footer .footer-links .empty-header {
+  margin-top: 45px;
+}
+
+.footer .footer-links .non-empty-header {
+  margin-top: 15px;
+  display: flex;
+  font-weight: bold;
+}
+
+.footer .description {
+  font-family: "IRANYekan";
+  background: #fafbff;
+  padding: 50px 0 50px 0;
+  text-align: center;
+}
+
+.footer .description .description-text {
+  width: 80%;
+  margin: 25px auto;
+}
+
+    .footer .description .socials {
+        display: flex;
+        justify-content: center;
+        margin-top: 34px;
+        flex-wrap: wrap;
+    }
+
+.footer .description .socials .linkedin {
+  background: url("/image/linkedin.png");
+}
+
+.footer .description .socials .instagram {
+  background: url("/image/instagram.png");
+}
+
+.footer .description .socials .twitter {
+  background: url("/image/twitter.png");
+}
+
+.footer .description .socials .youtube {
+  background: url("/image/youtube.png");
+}
+
+.footer .description .socials .social-link {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .btn-float-call {
+    height: 64px;
+    width: 64px;
+    background: #3859ff;
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 10001;
+    cursor: pointer;
+  }
+
+  .btn-float-call .float-call-icon {
+    background: url("/image/phone.png");
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 20px;
+  }
+
+  .dropdown-menu li {
+    position: relative;
+  }
+
+  .nav-item .submenu {
+    display: none;
+    position: absolute;
+    right: 100%;
+    top: -7px;
+  }
+
+  .nav-item .submenu-left {
+    right: 100%;
+    left: auto;
+  }
+
+  .dropdown-menu > li:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown-menu > li:hover > .submenu {
+    display: block;
+  }
+
+  .navbar-nav > li:hover > .dropdown-menu {
+    display: block !important;
+  }
+}
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .btn-float-call {
+    height: 64px;
+    width: 64px;
+    background: #3859ff;
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 10001;
+    cursor: pointer;
+  }
+
+  .btn-float-call .float-call-icon {
+    background: url("/image/phone.png");
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 20px;
+  }
+
+  .dropdown-menu .dropdown-menu {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .btn-login,
+  .btn-submit {
+    display: none;
+  }
+
+  .navbar-brand {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/* ============ small devices .end// ============ */
+/* Home page styles */
+
+.background-white {
+    background-color: white !important;
+}
+/* home page banner part*/
+.home-banner {
+    position: relative;
+    margin-top: 50px;
+}
+
+.home-banner .ellipse {
+  background: url("/image/ellipse.png");
+  width: 98px;
+  height: 98px;
+  position: absolute;
+  right: 110px;
+  top: 57px;
+}
+
+    .home-banner .home-banner-content{
+        width: 90%;
+        margin: auto;
+    }
+
+    .home-banner .heading1 .heading1-highlight {
+        background: #f0f4ff;
+        color: #3859ff;
+        padding: 0 5px;
+    }
+
+.home-banner .short-desc {
+  font-family: "IRANYekan";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: justify;
+  margin-top: 24px;
+}
+
+.home-banner .long-desc {
+  font-family: "IRANYekan";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: justify;
+  margin-top: 16px;
+}
+
+.home-banner .btn-request-service {
+  height: 48px;
+  width: 243px;
+  right: 0;
+  top: 48px;
+  border-radius: 6px;
+  background: #3859ff;
+  color: #ffffff;
+  position: relative;
+}
+
+.home-banner .btn-request-service .request-service-icon {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  background: url("/image/medical-request.png");
+  width: 32px;
+  height: 32px;
+}
+
+.home-banner .btn-request-service .request-service-text {
+  padding-right: 30px;
+}
+
+.home-banner .btn-free-council {
+  margin-right: 10px;
+  height: 48px;
+  width: 185px;
+  right: 0px;
+  top: 48px;
+  border-radius: 6px;
+  background: #f0f4ff;
+  color: #3859ff;
+  position: relative;
+}
+
+.home-banner .btn-free-council .free-council-icon {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  background: url("/image/live-support.png");
+  width: 32px;
+  height: 32px;
+}
+
+.home-banner .btn-free-council .free-council-text {
+  padding-right: 30px;
+}
+
+
+/* end of home page banner part*/
+/* home page service part*/
+.home-services {
+    width: 100%;
+    margin-top: 50px;
+    font-family: "IRANYekan";
+    background: #FAFBFF;
+}
+
+    .home-services .home-services-title {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+
+        .home-services .home-services-title h2 {
+            font-family: IRANYekan;
+            font-size: 36px;
+            font-weight: 800;
+            line-height: 61px;
+            letter-spacing: 0em;
+            text-align: right;
+        }
+
+        .home-services .home-services-title p {
+            font-family: IRANYekan;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 29px;
+            letter-spacing: 0em;
+            text-align: right;
+        }
+
+        .home-services .home-services-title .btn-all-services {
+            margin-right: 40px;
+            margin-top: 32px;
+            height: 48px;
+            width: 200px;
+            border-radius: 6px;
+            color: #00BF9F;
+            position: relative;
+            font-weight: 700;
+            float: left;
+        }
+
+            .home-services .home-services-title .btn-all-services .my-icon {
+                position: absolute;
+                top: 13px;
+                left: 0px;
+            }
+
+            .home-services .home-services-title .btn-all-services .service-info-text {
+                padding-left: 10px;
+            }
+
+    .home-services .service-items-row {
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .home-services .service-item {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+        border-radius: 8px;
+        position: relative;
+    }
+
+        .home-services .service-item .service-label {
+            height: 32px;
+            width: 100px;
+            position: absolute;
+            left: 16px;
+            top: 16px;
+            border-radius: 6px;
+            background: #D6FFF8;
+            opacity: 0.6;
+            font-family: IRANYekan;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: center;
+            align-items: center;
+            display: grid;
+            color: #00BF9F;
+        }
+
+        .home-services .service-item img {
+            width: 64px;
+            height: 64px;
+            margin-top: 32px;
+            margin-right: 40px;
+        }
+
+        .home-services .service-item h2 {
+            font-size: 18px;
+            font-weight: 800;
+            margin-top: 25px;
+            margin-right: 40px;
+        }
+
+        .home-services .service-item p {
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 12px;
+            margin-right: 40px;
+            width: 80%;
+            text-align: justify;
+        }
+
+        .home-services .service-item .btn-service-info {
+            margin-right: 40px;
+            margin-top: 32px;
+            height: 48px;
+            width: 200px;
+            border-radius: 6px;
+            color: #3859FF;
+            position: relative;
+            font-weight: 700;
+        }
+
+            .home-services .service-item .btn-service-info .arrow-left-icon {
+                position: absolute;
+                top: 15px;
+                left: 0px;
+                background: url("/image/arrow-left.png");
+                width: 20px;
+                height: 20px;
+            }
+
+            .home-services .service-item .btn-service-info .service-info-text {
+                padding-left: 10px;
+            }
+
+/* end of home page service part*/
+
+/* home page numerical report */
+.home-numerical-report {
+    width: 100%;
+    margin-top: 50px;
+    padding-bottom: 25px;
+    font-family: "IRANYekan";
+    background: url('/image/ellipse-right-bottom.webp');
+    background-repeat: no-repeat;
+    background-position: right 130px bottom;
+}
+
+    .home-numerical-report .numerical-report-title {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+        .home-numerical-report .numerical-report-title h2 {
+            font-family: IRANYekan;
+            font-size: 36px;
+            font-weight: 800;
+            line-height: 61px;
+            letter-spacing: 0em;
+            text-align: right;
+        }
+
+        .home-numerical-report .numerical-report-title p {
+            font-family: IRANYekan;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 29px;
+            letter-spacing: 0em;
+            text-align: right;
+        }
+    .home-numerical-report .numerical-report-body {
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+    }
+        .home-numerical-report .numerical-report-body .numerical-report-item {
+            margin-top: 24px;
+            margin-bottom: 24px;
+            background: #EBFFFC;
+            border-radius: 12px;
+            position: relative;
+            margin-left: 24px;
+        }
+            .home-numerical-report .numerical-report-body .numerical-report-item .ht-card {
+                height: 217px;
+                text-align: center;
+            }
+                .home-numerical-report .numerical-report-body .numerical-report-item .ht-card .count {
+                    direction: ltr;
+                    font-family: 'IRANYekan';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 170%;
+                }
+
+                .home-numerical-report .numerical-report-body .numerical-report-item .ht-card h2 {
+                    font-family: 'IRANYekan';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 18px;
+                    line-height: 170%;
+                    color: #171717;
+                }
+
+                .home-numerical-report .numerical-report-body .numerical-report-item .ht-card p {
+                    font-family: 'IRANYekan';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 200%;
+                    color: #171717;
+                    opacity: 0.5;
+                }
+                .home-numerical-report .numerical-report-body .numerical-report-item .ht-card.patient-done {
+                    background-image: url('/image/patient-done.png');
+                    background-repeat: no-repeat;
+                    background-position: right 20px top;
+                    background-size: 40% 70%;
+                }
+                    .home-numerical-report .numerical-report-body .numerical-report-item .ht-card.patient-done .count {
+                        color: #00B398;
+                    }
+                .home-numerical-report .numerical-report-body .numerical-report-item .ht-card.folder {
+                    background-image: url('/image/folder.png');
+                    background-repeat: no-repeat;
+                    background-position: right 20px top;
+                    background-size: 40% 70%;
+                }
+                    .home-numerical-report .numerical-report-body .numerical-report-item .ht-card.folder .count {
+                        color: #EB9500;
+                    }
+                .home-numerical-report .numerical-report-body .numerical-report-item .ht-card.nurse {
+                    background-image: url('/image/nurse.png');
+                    background-repeat: no-repeat;
+                    background-position: right 20px top;
+                    background-size: 40% 70%;
+                }
+                    .home-numerical-report .numerical-report-body .numerical-report-item .ht-card.nurse .count {
+                        color: #3989E6;
+                    }
+    /* end of home page numerical report */
+
+/* home page numerical report */
+.home-trust-reason {
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 40px;
+    font-family: "IRANYekan";
+    background: url('/image/ellipse-left-top.png');
+    background-repeat: no-repeat;
+    background-position: left 160px top 1px;
+    background: #FAFBFF;
+}
+
+    .home-trust-reason .trust-reason-title {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+
+        .home-trust-reason .trust-reason-title h2 {
+            font-family: IRANYekan;
+            font-size: 36px;
+            font-weight: 800;
+            line-height: 61px;
+            letter-spacing: 0em;
+            text-align: right;
+        }
+
+        .home-trust-reason .trust-reason-title p {
+            font-family: IRANYekan;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 29px;
+            letter-spacing: 0em;
+            text-align: right;
+        }
+
+    .home-trust-reason .trust-reason-body {
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        .home-trust-reason .trust-reason-body .trust-reason-item {
+            margin-top: 24px;
+            margin-bottom: 24px;
+            border-radius: 12px;
+            position: relative;
+            margin-left: 24px;
+        }
+
+            .home-trust-reason .trust-reason-body .trust-reason-item .ht-card {
+                height: 217px;
+                text-align: right;
+                position: relative;
+            }
+
+                .home-trust-reason .trust-reason-body .trust-reason-item .ht-card .background {
+                    position: absolute;
+                    left: 20px;
+                    overflow: hidden;
+                    font-family: 'IRANYekan';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 80px;
+                    line-height: 138px;
+                    display: flex;
+                    align-items: center;
+                    background: linear-gradient(180deg, #E0E0E0 0%, rgba(224, 224, 224, 0) 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    opacity: 0.8;
+                }
+
+                .home-trust-reason .trust-reason-body .trust-reason-item .ht-card img {
+                    width: 30px;
+                    height: 30px;
+                    margin-top: 31px;
+                    margin-right: 12px;
+                }
+
+                .home-trust-reason .trust-reason-body .trust-reason-item .ht-card h2 {
+                    font-family: 'IRANYekan';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 24px;
+                    line-height: 170%;
+                    color: #3859FF;
+                }
+
+                .home-trust-reason .trust-reason-body .trust-reason-item .ht-card p {
+                    font-family: 'IRANYekan';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 200%;
+                    color: #6E6E6E;
+                    text-align: justify;
+                }
+/* end of home page trust reason */
+/* home page request now */
+.home-request-now {
+    width: 100%;
+    padding: 30px 24px;
+    font-family: "IRANYekan";
+    background: url('/image/ellipse-vertical-rectangle-right.svg');
+    background-repeat: no-repeat;
+    background-position: right 102px top 30px;
+}
+
+    .home-request-now .request-now-body {
+        margin: 50px 156px 50px 156px;
+        width: calc(100% - 312px);
+        height: 287px;
+        background: radial-gradient(66.02% 100% at 50% 0%, #388BFF 0%, #3859FF 100%);
+        border-radius: 16px;
+        position: relative;
+    }
+        .home-request-now .request-now-body .title {
+            padding-top: 48px;
+            height: 61px;
+            font-family: 'IRANYekan';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 36px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .home-request-now .request-now-body .description {
+            padding-top: 56px;
+            width: 90%;
+            font-family: 'IRANYekan';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            margin: auto;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .home-request-now .request-now-body form {
+            margin: 30px 30px;
+            background: #FFFFFF;
+            box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.04);
+            border-radius: 12px;
+            position: absolute;
+            height: 128px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            left: 10%;
+            right: 10%;
+            top: 220px;
+        }
+            .home-request-now .request-now-body form .row {
+                margin: auto;
+            }
+            .home-request-now .request-now-body form input,
+            .home-request-now .request-now-body form select {
+                background: #F5F7FF;
+                border: 2.5px solid #3859FF;
+                border-radius: 8px;
+            }
+      
+/* end of home page request now */
+
+/*home page contact us*/
+
+.home-contact-us {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    font-family: "IRANYekan";
+}
+    .home-contact-us .contact-us-body {
+        display: flex;
+        margin: 50px 156px 50px 156px;
+    }
+        .home-contact-us .contact-us-body .title {
+            margin-left: 81px;
+        }
+
+    .home-contact-us .details-card {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .home-contact-us .icon-container {
+        width: 72px;
+        height: 72px;
+        background: #EDFAF8;
+        border-radius: 8px;
+        position: relative;
+    }
+
+    .home-contact-us .details {
+        width: calc(100% - 72px);
+        margin-right: 16px;
+    }
+
+        .home-contact-us .details div {
+            font-family: 'IRANYekan';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 200%;
+            text-align: right;
+            color: #6E6E6E;
+        }
+
+        .home-contact-us .details a {
+            font-family: 'IRANYekan';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 200%;
+            text-align: right;
+            color: #171717;
+            text-decoration: none;
+        }
+
+    .home-contact-us .icon {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+
+/*end of homepage contact us*/
+
+/*homepage latest blogs*/
+
+.home-latest-blogs {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    font-family: "IRANYekan";
+}
+
+
+    .home-latest-blogs .latest-blogs-title {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+        .home-latest-blogs .latest-blogs-title h2 {
+            font-family: IRANYekan;
+            font-size: 36px;
+            font-weight: 800;
+            line-height: 61px;
+            letter-spacing: 0em;
+            text-align: right;
+        }
+
+        .home-latest-blogs .latest-blogs-title p {
+            font-family: IRANYekan;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 29px;
+            letter-spacing: 0em;
+            text-align: right;
+        }
+
+        .home-latest-blogs .latest-blogs-title .btn-all-blogs {
+            margin-right: 40px;
+            margin-top: 32px;
+            height: 48px;
+            width: 200px;
+            border-radius: 6px;
+            color: #00BF9F;
+            position: relative;
+            font-weight: 700;
+            float: left;
+        }
+
+            .home-latest-blogs .latest-blogs-title .btn-all-blogs .my-icon {
+                position: absolute;
+                top: 13px;
+                left: 0px;
+            }
+
+            .home-latest-blogs .latest-blogs-title .btn-all-blogs .blogs-info-text {
+                padding-left: 10px;
+            }
+
+
+    .home-latest-blogs .latest-blogs-body {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+        .home-latest-blogs .latest-blogs-body .latest-blogs-item {
+            margin-bottom: 15px;
+        }
+            .home-latest-blogs .latest-blogs-body .latest-blogs-item .lb-card {
+                width: 100%;
+                height: 480px;
+                background-size: cover;
+                border-radius: 10px;
+                position: relative;
+            }
+                .home-latest-blogs .latest-blogs-body .latest-blogs-item .lb-card .blog-title {
+                    font-family: 'IRANYekan';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 18px;
+                    line-height: 170%;
+                    text-align: right;
+                    color: #FFFFFF;
+                    position: absolute;
+                    bottom: 68px;
+                    right: 30px;
+                }
+                .home-latest-blogs .latest-blogs-body .latest-blogs-item .lb-card .blog-details {
+                    display: flex;
+                    position: absolute;
+                    bottom: 32px;
+                    right: 30px;
+                }
+                    .home-latest-blogs .latest-blogs-body .latest-blogs-item .lb-card .blog-details .blog-date,
+                    .home-latest-blogs .latest-blogs-body .latest-blogs-item .lb-card .blog-details .blog-view {
+                        display: flex;
+                        width: 100px;
+                        margin-left: 10px;
+                    }
+                        .home-latest-blogs .latest-blogs-body .latest-blogs-item .lb-card .blog-details .blog-date img,
+                        .home-latest-blogs .latest-blogs-body .latest-blogs-item .lb-card .blog-details .blog-view img {
+                            width: 15px;
+                            height: 15px;
+                            margin-top: 5px;
+                        }
+                        .home-latest-blogs .latest-blogs-body .latest-blogs-item .lb-card .blog-details .blog-date span,
+                        .home-latest-blogs .latest-blogs-body .latest-blogs-item .lb-card .blog-details .blog-view span {
+                            width: 15px;
+                            height: 15px;
+                            font-family: 'IRANYekan';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 24px;
+                            text-align: right;
+                            width: 72px;
+                            color: #FFFFFF;
+                            margin-right: 5px;
+                        }
+/*end of homepage latest blogs*/
+
+    @media all and (min-width: 768px) {
+        .home-banner .banner-image img {
+        width: 454px;
+        height: 620px;
+      }
+
+  .home-banner .right-col {
+    margin-top: 85px;
+    margin-right: 60px;
+  }
+
+  .home-banner .sign {
+    background: url("/image/sign.png");
+    width: 266px;
+    height: 111px;
+    position: absolute;
+    right: 45%;
+    top: 107px;
+  }
+
+  .home-banner .heading1 {
+    font-family: "IRANYekan";
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 71px;
+    letter-spacing: 0em;
+    text-align: right;
+  }
+
+    .home-services .col-md-4 {
+        flex: 0 0 auto;
+        width: 32%;
+    }
+}
+
+@media (max-width: 768px) {
+  .home-banner .banner-image img {
+    width: 272px;
+    height: 372px;
+  }
+  .home-banner .ellipse {
+    right: -20px;
+  }
+
+  .home-banner .sign {
+    display: none;
+  }
+
+  .home-banner .heading1 {
+    font-family: "IRANYekan";
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: right;
+  }
+
+  .home-banner .right-col {
+    margin-top: 100px;
+    padding-bottom: 55px;
+  }
+    .home-request-now {
+        background: none;
+    }
+        .home-request-now .request-now-body {
+            margin: 24px 0;
+            width: 100%;
+            min-height: 574px;
+        }
+            .home-request-now .request-now-body .description {
+                margin-top: 18px;
+            }
+            .home-request-now .request-now-body form {
+                margin-top: 20px;
+                min-height: 320px;
+            }
+                .home-request-now .request-now-body form .form-select,
+                .home-request-now .request-now-body form .form-control,
+                .home-request-now .request-now-body form .btn {
+                    line-height: 3;
+                    width: 100%;
+                }
+                .home-request-now .request-now-body form .row {
+                    margin: unset;
+                }
+
+    .home-contact-us .contact-us-body {
+        margin: 50px;
+        flex-flow: wrap;
+    }
+}
+/* End of Home page styles */
+        /* Icons */
+
+.my-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+    .my-icon.arrow-left {
+        background-image: url("/image/icon-package.webp");
+        background-position: -35px 0px;
+    }
+
+    .my-icon.arrow-right-circle {
+        background-image: url("/image/icon-package.webp");
+        background-position: -144px 0px;
+    }
+
+    .my-icon.arrow-left-circle {
+        background-image: url("/image/icon-package.webp");
+        background-position: -70px 0px;
+    }
+
+    .my-icon.calender {
+        background-image: url("/image/icon-package.webp");
+        background-position: -145px -70px;
+    }
+
+    .my-icon.pen {
+        background-image: url("/image/icon-package.webp");
+        background-position: -178px -250px;
+    }
+
+    .my-icon.eye {
+        background-image: url("/image/icon-package.webp");
+        background-position: -250px -250px;
+    }
+
+    .my-icon.folder {
+        background-image: url("/image/icon-package.webp");
+        background-position: -322px -288px;
+    }
+
+/* End of Icons*/
+
+/*Place holder Direction*/
+
+input[type="tel"]:-moz-placeholder {
+    text-align: right;
+}
+
+input[type="tel"]:-ms-input-placeholder {
+    text-align: right;
+}
+
+input[type="tel"]::-webkit-input-placeholder {
+    text-align: right;
+}
+
+
+/* Services*/
+
+.service-header {
+    width: 100%;
+    height: 344px;
+    background-image: url('../image/full-ellips.webp');
+}
+
+    /* service page list part*/
+    .service-header .header-container {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(196, 196, 196, 0.2) 0%, #C4C4C4 24.17%, #C4C4C4 51.01%, #C4C4C4 75.82%, rgba(196, 196, 196, 0.2) 100%);
+    }
+
+        .service-header .header-container .breadcrumbs {
+            display: flex;
+            margin: 67px auto 0 auto;
+            width: 140px;
+            justify-content: space-between;
+        }
+            .service-header .header-container .breadcrumbs a {
+                font-family: 'IRANYekan';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 170%;
+                color: #3859FF;
+                text-decoration: none;
+            }
+            .service-header .header-container .breadcrumbs span {
+                font-family: 'IRANYekan';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 170%;
+
+                color: #171717;
+                opacity: 0.6;
+            }
+        .service-header .header-container h1 {
+            margin: 24px auto;
+            width: 360px;
+            font-family: 'IRANYekan';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 2rem;
+            text-align: right;
+            color: #3859FF;
+        }
+        .service-header .header-container p {
+            font-family: 'IRANYekan';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 200%;
+            text-align: center;
+            color: #171717;
+            width: 60%;
+            height: 64px;
+            margin: 24px auto;
+        }
+        .service-header .header-container .search-box {
+            background: #FFFFFF;
+            box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.04);
+            border-radius: 10px;
+            width: 744px;
+            height: 112px;
+            margin: 110px auto;
+            padding: 25px;
+            display: flex;
+        }
+            .service-header .header-container .search-box .search-input {
+                width: 517px;
+                height: 64px;
+                background: #FAFAFA;
+                border: 2px solid #E0E0E0;
+                border-radius: 8px;
+                margin-left: 25px;
+                font-size: 25px;
+                font-family: 'IRANYekan';
+                font-style: normal;
+                font-weight: 400;
+            }
+            .service-header .header-container .search-box .search-btn {
+                width: 131px;
+                height: 62px;
+                background: #3859FF;
+                border-radius: 8px;
+                font-family: 'IRANYekan';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 16px;
+                line-height: 28px;
+                color: #FFFFFF;
+            }
+
+.service-list {
+    width: 100%;
+    margin-top: 80px;
+    font-family: "IRANYekan";
+}
+
+    .service-list .service-list-title {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+
+        .service-list .service-list-title h2 {
+            font-family: IRANYekan;
+            font-size: 36px;
+            font-weight: 800;
+            line-height: 61px;
+            letter-spacing: 0em;
+            text-align: right;
+        }
+
+        .service-list .service-list-title p {
+            font-family: IRANYekan;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 29px;
+            letter-spacing: 0em;
+            text-align: right;
+        }
+
+        .service-list .service-list-title .btn-all-services {
+            margin-right: 40px;
+            margin-top: 32px;
+            height: 48px;
+            width: 200px;
+            border-radius: 6px;
+            color: #00BF9F;
+            position: relative;
+            font-weight: 700;
+            float: left;
+        }
+
+            .service-list .service-list-title .btn-all-services .my-icon {
+                position: absolute;
+                top: 13px;
+                left: 0px;
+            }
+
+            .service-list .service-list-title .btn-all-services .service-info-text {
+                padding-left: 10px;
+            }
+
+    .service-list .service-items-row {
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .service-list .service-item {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+        border-radius: 8px;
+        position: relative;
+    }
+
+        .service-list .service-item .service-label {
+            height: 32px;
+            width: 100px;
+            position: absolute;
+            left: 16px;
+            top: 16px;
+            border-radius: 6px;
+            background: #D6FFF8;
+            opacity: 0.6;
+            font-family: IRANYekan;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: center;
+            align-items: center;
+            display: grid;
+            color: #00BF9F;
+        }
+
+        .service-list .service-item img {
+            width: 64px;
+            height: 64px;
+            margin-top: 32px;
+            margin-right: 40px;
+        }
+
+        .service-list .service-item h2 {
+            font-size: 18px;
+            font-weight: 800;
+            margin-top: 25px;
+            margin-right: 40px;
+        }
+
+        .service-list .service-item p {
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 12px;
+            margin-right: 40px;
+            width: 80%;
+            text-align: justify;
+        }
+
+        .service-list .service-item .btn-service-info {
+            margin-right: 40px;
+            margin-top: 32px;
+            height: 48px;
+            width: 200px;
+            border-radius: 6px;
+            color: #3859FF;
+            position: relative;
+            font-weight: 700;
+        }
+
+            .service-list .service-item .btn-service-info .arrow-left-icon {
+                position: absolute;
+                top: 15px;
+                left: 0px;
+                background: url("/image/arrow-left.png");
+                width: 20px;
+                height: 20px;
+            }
+
+            .service-list .service-item .btn-service-info .service-info-text {
+                padding-left: 10px;
+            }
+
+/* end of service page list part*/
+
+/* service detais page*/
+
+.service-details-content {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.service-details-header {
+    width: 100%;
+    height: 344px;
+    background-image: url('../image/full-ellips.webp');
+    margin-bottom: 200px;
+}
+
+    /* service page list part*/
+    .service-details-header .header-container {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(196, 196, 196, 0.2) 0%, #C4C4C4 24.17%, #C4C4C4 51.01%, #C4C4C4 75.82%, rgba(196, 196, 196, 0.2) 100%);
+    }
+
+        .service-details-header .header-container .breadcrumbs {
+            display: flex;
+            margin: 67px auto 0 auto;
+            width: 340px;
+            justify-content: space-between;
+        }
+
+            .service-details-header .header-container .breadcrumbs a {
+                font-family: 'IRANYekan';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 170%;
+                color: #3859FF;
+                text-decoration: none;
+            }
+
+            .service-details-header .header-container .breadcrumbs span {
+                font-family: 'IRANYekan';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 170%;
+                color: #171717;
+                opacity: 0.6;
+            }
+
+        .service-details-header .header-container .title {
+            margin: 24px auto;
+            font-family: 'IRANYekan';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 2rem;
+            text-align: center;
+            color: #3859FF;
+        }
+
+        .service-details-header .header-container p {
+            font-family: 'IRANYekan';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 200%;
+            text-align: center;
+            color: #171717;
+            width: 60%;
+            max-height: 64px;
+            overflow-y: hidden;
+            margin: 24px auto;
+        }
+
+        .service-details-header .header-container .search-box {
+            background: #FFFFFF;
+            box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.04);
+            border-radius: 10px;
+            width: 820px;
+            height: 128px;
+            margin: 110px auto;
+            padding: 25px;
+            display: flex;
+        }
+
+            .service-details-header .header-container .search-box .search-input {
+                width: 517px;
+                height: 64px;
+                background: #FAFAFA;
+                border: 2px solid #E0E0E0;
+                border-radius: 8px;
+                margin-left: 25px;
+                font-size: 25px;
+                font-family: 'IRANYekan';
+                font-style: normal;
+                font-weight: 400;
+            }
+
+            .service-details-header .header-container .search-box .search-btn {
+                width: 131px;
+                height: 62px;
+                background: #3859FF;
+                border-radius: 8px;
+                font-family: 'IRANYekan';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 16px;
+                line-height: 28px;
+                color: #FFFFFF;
+            }
+
+
+/* end of service details page*/
+
+@media (max-width: 768px) {
+    .service-header .header-container .breadcrumbs,
+    .service-details-header .header-container .breadcrumbs {
+        margin: 63px auto 0 auto;
+    }
+
+    .service-header .header-container .title {
+        width: 220px;
+        font-size: 1.4rem;
+    }
+
+    .service-header .header-container p {
+        width: 230px;
+    }
+
+    .service-header .header-container .search-box {
+        width: 90%;
+        height: 160px;
+        margin: 110px auto;
+        display: block;
+        padding: unset;
+    }
+        .service-header .header-container .search-box .search-input,
+        .service-details-header .header-container .search-box .search-input {
+            font-size: 16px;
+            width: 90%;
+            margin: 20px auto;
+            margin: 10px 5% 0 5%;
+        }
+
+        .service-header .header-container .search-box .search-btn,
+        .service-details-header .header-container .search-box .search-btn {
+            width: 90%;
+            margin-top: 15px;
+            margin: 10px 5%;
+        }
+
+    .service-details-header .header-container .search-box {
+        width: 90%;
+        height: 260px;
+        margin: 110px auto;
+        display: block;
+        padding: 15px;
+    }
+}
+
+/* blog list page*/
+
+
+/* blog list popular blogs*/
+
+.popular-blogs {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 25px;
+    font-family: "IRANYekan";
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+    .popular-blogs .popular-blogs-title {
+        display: flex;
+        margin: auto;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+
+        .popular-blogs .popular-blogs-title h2 {
+            font-family: IRANYekan;
+            font-size: 36px;
+            font-weight: 800;
+            line-height: 61px;
+            letter-spacing: 0em;
+            text-align: right;
+        }
+
+
+    .popular-blogs .popular-blogs-body {
+        display: flex;
+        margin: auto;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+        .popular-blogs .popular-blogs-body .popular-blogs-item,
+        .popular-blogs .popular-blogs-body .editor-selected-item {
+            margin-bottom: 25px;
+        }
+
+            .popular-blogs .popular-blogs-body .popular-blogs-item .lb-card {
+                width: 100%;
+                height: 308px;
+                background-size: cover;
+                border-radius: 10px;
+                position: relative;
+            }
+
+                .popular-blogs .popular-blogs-body .popular-blogs-item .lb-card .blog-title {
+                    font-family: 'IRANYekan';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 18px;
+                    line-height: 170%;
+                    text-align: right;
+                    color: #FFFFFF;
+                    position: absolute;
+                    bottom: 68px;
+                    right: 30px;
+                }
+
+                .popular-blogs .popular-blogs-body .popular-blogs-item .lb-card .blog-label {
+                    position: absolute;
+                    top: 32px;
+                    left: 30px;
+                    background: #00BF9F;
+                    border-radius: 50px;
+                    font-family: 'IRANYekan';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 170%;
+                    width: 111px;
+                    height: 32px;
+                    text-align: center;
+                    padding: 3px;
+                    color: #FFFFFF;
+                }
+
+                .popular-blogs .popular-blogs-body .popular-blogs-item .lb-card .blog-details {
+                    display: flex;
+                    position: absolute;
+                    bottom: 32px;
+                    right: 30px;
+                }
+
+                    .popular-blogs .popular-blogs-body .popular-blogs-item .lb-card .blog-details .blog-date,
+                    .popular-blogs .popular-blogs-body .popular-blogs-item .lb-card .blog-details .blog-view {
+                        display: flex;
+                        width: 130px;
+                        margin-left: 10px;
+                    }
+
+                        .popular-blogs .popular-blogs-body .popular-blogs-item .lb-card .blog-details .blog-date img,
+                        .popular-blogs .popular-blogs-body .popular-blogs-item .lb-card .blog-details .blog-view img {
+                            width: 15px;
+                            height: 15px;
+                            margin-top: 5px;
+                        }
+
+                        .popular-blogs .popular-blogs-body .popular-blogs-item .lb-card .blog-details .blog-date span,
+                        .popular-blogs .popular-blogs-body .popular-blogs-item .lb-card .blog-details .blog-view span {
+                            width: 15px;
+                            height: 15px;
+                            font-family: 'IRANYekan';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 24px;
+                            text-align: right;
+                            width: 100px;
+                            color: #FFFFFF;
+                            margin-right: 5px;
+                        }
+
+
+            .popular-blogs .popular-blogs-body .editor-selected-item .lb-card {
+                width: 100%;
+                height: 640px;
+                background-size: cover;
+                border-radius: 10px;
+                position: relative;
+            }
+
+                .popular-blogs .popular-blogs-body .editor-selected-item .lb-card .blog-title {
+                    font-family: 'IRANYekan';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 18px;
+                    line-height: 170%;
+                    text-align: right;
+                    color: #FFFFFF;
+                    position: absolute;
+                    bottom: 68px;
+                    right: 30px;
+                }
+
+                .popular-blogs .popular-blogs-body .editor-selected-item .lb-card .blog-label {
+                    position: absolute;
+                    top: 32px;
+                    left: 30px;
+                    background: #00BF9F;
+                    border-radius: 50px;
+                    font-family: 'IRANYekan';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 170%;
+                    width: 111px;
+                    height: 32px;
+                    text-align: center;
+                    padding: 3px;
+                    color: #FFFFFF;
+                }
+
+                .popular-blogs .popular-blogs-body .editor-selected-item .lb-card .blog-details {
+                    display: flex;
+                    position: absolute;
+                    bottom: 32px;
+                    right: 30px;
+                }
+
+                    .popular-blogs .popular-blogs-body .editor-selected-item .lb-card .blog-details .blog-date,
+                    .popular-blogs .popular-blogs-body .editor-selected-item .lb-card .blog-details .blog-view {
+                        display: flex;
+                        width: 130px;
+                        margin-left: 10px;
+                    }
+
+                        .popular-blogs .popular-blogs-body .editor-selected-item .lb-card .blog-details .blog-date img,
+                        .popular-blogs .popular-blogs-body .editor-selected-item .lb-card .blog-details .blog-view img {
+                            width: 15px;
+                            height: 15px;
+                            margin-top: 5px;
+                        }
+
+                        .popular-blogs .popular-blogs-body .editor-selected-item .lb-card .blog-details .blog-date span,
+                        .popular-blogs .popular-blogs-body .editor-selected-item .lb-card .blog-details .blog-view span {
+                            width: 15px;
+                            height: 15px;
+                            font-family: 'IRANYekan';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 24px;
+                            text-align: right;
+                            width: 100px;
+                            color: #FFFFFF;
+                            margin-right: 5px;
+                        }
+/*end of blog list popular blogs*/
+
+/* blog list all blogs*/
+
+
+.all-blogs {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 25px;
+    font-family: "IRANYekan";
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+    .all-blogs .all-blogs-title {
+        display: flex;
+        margin: auto;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+
+        .all-blogs .all-blogs-title h2 {
+            font-family: IRANYekan;
+            font-size: 36px;
+            font-weight: 800;
+            line-height: 61px;
+            letter-spacing: 0em;
+            text-align: right;
+        }
+
+
+    .all-blogs .all-blogs-body {
+        display: flex;
+        margin: auto;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+        .all-blogs .all-blogs-body .all-blogs-item,
+        .all-blogs .all-blogs-body .editor-selected-item {
+            margin-bottom: 25px;
+        }
+
+            .all-blogs .all-blogs-body .all-blogs-item .lb-card {
+                width: 100%;
+                height: 360px;
+                background-size: cover;
+                border-radius: 10px;
+                position: relative;
+            }
+
+                .all-blogs .all-blogs-body .all-blogs-item .lb-card .blog-title {
+                    font-family: 'IRANYekan';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 18px;
+                    line-height: 170%;
+                    text-align: right;
+                    color: #FFFFFF;
+                    position: absolute;
+                    bottom: 68px;
+                    right: 30px;
+                }
+
+                .all-blogs .all-blogs-body .all-blogs-item .lb-card .blog-label {
+                    position: absolute;
+                    top: 32px;
+                    left: 30px;
+                    background: #00BF9F;
+                    border-radius: 50px;
+                    font-family: 'IRANYekan';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 170%;
+                    width: 111px;
+                    height: 32px;
+                    text-align: center;
+                    padding: 3px;
+                    color: #FFFFFF;
+                }
+
+                .all-blogs .all-blogs-body .all-blogs-item .lb-card .blog-details {
+                    display: flex;
+                    position: absolute;
+                    bottom: 32px;
+                    right: 30px;
+                }
+
+                    .all-blogs .all-blogs-body .all-blogs-item .lb-card .blog-details .blog-date,
+                    .all-blogs .all-blogs-body .all-blogs-item .lb-card .blog-details .blog-view {
+                        display: flex;
+                        width: 130px;
+                        margin-left: 10px;
+                    }
+
+                        .all-blogs .all-blogs-body .all-blogs-item .lb-card .blog-details .blog-date img,
+                        .all-blogs .all-blogs-body .all-blogs-item .lb-card .blog-details .blog-view img {
+                            width: 15px;
+                            height: 15px;
+                            margin-top: 5px;
+                        }
+
+                        .all-blogs .all-blogs-body .all-blogs-item .lb-card .blog-details .blog-date span,
+                        .all-blogs .all-blogs-body .all-blogs-item .lb-card .blog-details .blog-view span {
+                            width: 15px;
+                            height: 15px;
+                            font-family: 'IRANYekan';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 24px;
+                            text-align: right;
+                            width: 100px;
+                            color: #FFFFFF;
+                            margin-right: 5px;
+                        }
+
+    .all-blogs .blogs-paginator {
+        display: flex;
+        width: 500px;
+        height: 40px;
+        margin: 0 auto;
+    }
+
+        .all-blogs .blogs-paginator .prev-btn,
+        .all-blogs .blogs-paginator .next-btn {
+            display: flex;
+            width: 65px;
+            height: 40px;
+            font-family: 'IRANYekan';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 170%;
+            /* or 27px */
+
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+            .all-blogs .blogs-paginator .prev-btn .prev-btn-txt {
+                margin-right: 3px;
+            }
+
+            .all-blogs .blogs-paginator .next-btn .next-btn-txt {
+                margin-left: 3px;
+            }
+
+        .all-blogs .blogs-paginator .page-number-btn {
+            width: 40px;
+            height: 40px;
+            align-items: center;
+            text-align: center;
+            color: #202F5C;
+            text-decoration: none;
+        }
+
+            .all-blogs .blogs-paginator .page-number-btn span {
+                width: 100%;
+                height: 100%;
+                font-family: 'IRANYekan';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 170%;
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+                color: #202F5C;
+                padding: 6px;
+            }
+
+            .all-blogs .blogs-paginator .page-number-btn.current-page {
+                background: #3859FF;
+                border-radius: 4px;
+                color: #FFFFFF;
+            }
+/* end of blog list all blogs*/
+
+/* blog details page*/
+
+
+.blog-details-header {
+    width: 100%;
+    height: 344px;
+    background-image: url('../image/full-ellips.webp');
+    margin-bottom: 30px;
+}
+
+    .blog-details-header .header-container {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(196, 196, 196, 0.2) 0%, #C4C4C4 24.17%, #C4C4C4 51.01%, #C4C4C4 75.82%, rgba(196, 196, 196, 0.2) 100%);
+    }
+
+        .blog-details-header .header-container .breadcrumbs {
+            display: flex;
+            margin: 67px auto 0 auto;
+            width: 340px;
+            justify-content: space-between;
+        }
+
+            .blog-details-header .header-container .breadcrumbs a {
+                font-family: 'IRANYekan';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 170%;
+                color: #3859FF;
+                text-decoration: none;
+            }
+
+            .blog-details-header .header-container .breadcrumbs span {
+                font-family: 'IRANYekan';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 170%;
+                color: #171717;
+                opacity: 0.6;
+            }
+
+        .blog-details-header .header-container .title {
+            margin: 24px auto;
+            font-family: 'IRANYekan';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 2rem;
+            text-align: center;
+            color: #3859FF;
+        }
+
+        .blog-details-header .header-container p {
+            font-family: 'IRANYekan';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 200%;
+            text-align: center;
+            color: #171717;
+            width: 60%;
+            max-height: 64px;
+            overflow-y: hidden;
+            margin: 24px auto;
+        }
+        .blog-details-header .header-container .blog-header-details {
+            width: 500px;
+            height: 26px;
+            margin: 70px auto;
+        }
+            .blog-details-header .header-container .blog-header-details .col-3,
+            .blog-details-header .header-container .blog-header-details .col-6 {
+                display: flex;
+                margin-bottom: 10px;
+            }
+                .blog-details-header .header-container .blog-header-details .col-3 .desc,
+                .blog-details-header .header-container .blog-header-details .col-6 .desc {
+                    font-family: 'IRANYekan';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 200%;
+                    text-align: right;
+                    color: #6E6E6E;
+                    margin-right: 5px;
+                }
+/* end of blog details page*/
+@media (max-width: 768px) {
+    .all-blogs .blogs-paginator {
+        width: 80%;
+    }
+    .blog-details-header .header-container .breadcrumbs {
+        margin: 64px auto 0 auto;
+        width: 80%;
+    }
+
+    .blog-details-header .header-container .blog-header-details {
+        width: 80%;
+    }
+}
+/* end of blog list page*/

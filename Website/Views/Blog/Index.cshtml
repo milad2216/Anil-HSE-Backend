@@ -1,0 +1,169 @@
+﻿@model Website.Models.BlogListViweModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="service-header">
+    <div class="header-container">
+        <div class="breadcrumbs">
+            <a href="/">صفحه اصلی</a>/
+            <span>مقالات</span>
+        </div>
+        <h1>مقالات و مطالب آموزشی</h1>
+        <p>موسسه پرستاری همراه طب با تهیه و تدارک کلیه تجهیزات پزشکی و وسایل بیمارستانی و مصرفی مورد نیاز بیمار در منزل و بیمارستان را به همراه کادر مجرب خود تامین میکند، در ادامه شرح کامل خدمات را میخوانید.</p>
+        <form class="search-box" action="/services">
+            <input class="search-input" name="s" placeholder="مقاله مورد نظر خود را جستجو کنید..." />
+            <button type="submit" class="search-btn">جستجو</button>
+        </form>
+    </div>
+</div>
+
+
+<div class="popular-blogs">
+    <div class="popular-blogs-title">
+        <div class="col-12 col-md-7">
+            <h2>پربازدیدترین مقالات</h2>
+        </div>
+    </div>
+    <div class="row justify-content-between popular-blogs-body">
+        <div class="col-12 col-md-6">
+            @for (int i = 0; i < Model.MostViewedBlogs.Count; i++)
+            {
+                <a href="@Model.MostViewedBlogs[i].Url">
+                    <div class="popular-blogs-item">
+                        <div class="lb-card" style="background-image:linear-gradient(180deg, rgba(0, 0, 0, 0) 42.4%, rgba(0, 0, 0, 0.8) 100%), url('/image/blog-image.webp')">
+                            <div class="blog-title">
+                                @Model.MostViewedBlogs[i].Title
+                            </div>
+                            <div class="blog-label">
+                                پربازدید
+                            </div>
+                            <div class="blog-details">
+                                <div class="blog-date">
+                                    <img src="~/image/calendar.svg" />
+                                    <span> @Model.MostViewedBlogs[i].DaysAgoString</span>
+                                </div>
+                                <div class="blog-view">
+                                    <img src="~/image/eye.svg" />
+                                    <span>@Model.MostViewedBlogs[i].FormatedViews بازدید</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            }
+        </div>
+        <div class="col-12 col-md-6">
+            @if (@Model.SelectedByEditor != null)
+            {
+                <a href="@Model.SelectedByEditor.Url">
+                    <div class="editor-selected-item">
+                        <div class="lb-card" style="background-image:linear-gradient(180deg, rgba(0, 0, 0, 0) 42.4%, rgba(0, 0, 0, 0.8) 100%), url('/image/blog-image.webp')">
+                            <div class="blog-title">
+                                @Model.SelectedByEditor.Title
+                            </div>
+                            <div class="blog-label">
+                                منتخب سردبیر
+                            </div>
+                            <div class="blog-details">
+                                <div class="blog-date">
+                                    <img src="~/image/calendar.svg" />
+                                    <span> @Model.SelectedByEditor.DaysAgoString</span>
+                                </div>
+                                <div class="blog-view">
+                                    <img src="~/image/eye.svg" />
+                                    <span>@Model.SelectedByEditor.FormatedViews بازدید</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            }
+        </div>
+    </div>
+</div>
+
+
+<div class="all-blogs">
+    <div class="all-blogs-title">
+        <div class="col-12 col-md-7">
+            <h2>جدیدترین مقالات</h2>
+        </div>
+    </div>
+    <div class="row justify-content-between all-blogs-body">
+        @for (int i = 0; i < Model.Blogs.Count; i++)
+        {
+            <div class="col-12 col-md-4">
+                <a href="@Model.Blogs[i].Url">
+                    <div class="all-blogs-item">
+                        <div class="lb-card" style="background-image:linear-gradient(180deg, rgba(0, 0, 0, 0) 42.4%, rgba(0, 0, 0, 0.8) 100%), url('/image/blog-image.webp')">
+                            <div class="blog-title">
+                                @Model.Blogs[i].Title
+                            </div>
+                            <div class="blog-details">
+                                <div class="blog-date">
+                                    <img src="~/image/calendar.svg" />
+                                    <span> @Model.Blogs[i].DaysAgoString</span>
+                                </div>
+                                <div class="blog-view">
+                                    <img src="~/image/eye.svg" />
+                                    <span>@Model.Blogs[i].FormatedViews بازدید</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+    <div class="blogs-paginator">
+        @if (Model.CurrentPage > 1)
+        {
+            <a href="/blogs?page=@(Model.CurrentPage -1)" class="prev-btn">
+                <span class="my-icon arrow-right-circle"></span>
+                <span class="prev-btn-txt">قبلی</span>
+            </a>
+        }
+        @{
+            var startIndex = Model.CurrentPage < 5 && Model.TotalPages < 8 ? 0 : Model.CurrentPage - 3;
+            if (Model.TotalPages - startIndex < 8 && Model.TotalPages > 8)
+                startIndex = Model.TotalPages - 8;
+        }
+        @for (int i = 1, j=3; i <= Model.TotalPages && i <= 8 && startIndex<=Model.TotalPages; i++)
+        {
+            if (i <= 4)
+            {
+                <a href="/blogs?page=@(startIndex + i)" class="page-number-btn @(Model.CurrentPage == startIndex + i ? "current-page" : "")">
+                    <span>@(startIndex + i)</span>
+            </a>
+            }
+            if (i == 5 && Model.CurrentPage < (Model.TotalPages/2) && Model.TotalPages > 8)
+            {
+                <a class="page-number-btn">
+                    <span>...</span>
+                </a>
+            }
+            if (i > 4)
+            {
+                <a href="/blogs?page=@(Model.TotalPages - j)" class="page-number-btn @(Model.CurrentPage == Model.TotalPages - j ? "current-page" : "")">
+                    <span>@(Model.TotalPages - j)</span>
+                </a>
+                j--;
+            }
+
+            if (i == 4 && Model.CurrentPage >= (Model.TotalPages / 2) && Model.TotalPages > 8)
+            {
+                <a class="page-number-btn">
+                    <span>...</span>
+                </a>
+            }
+        }
+        @if (Model.CurrentPage < Model.TotalPages)
+        {
+            <a href="/blogs?page=@(Model.CurrentPage +1)" class="next-btn">
+                <span class="next-btn-txt">بعدی</span>
+                <span class="my-icon arrow-left-circle"></span>
+            </a>
+        }
+    </div>
+</div>

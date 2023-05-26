@@ -1,0 +1,80 @@
+﻿@model Website.Models.ServiceListViweModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="service-header">
+    <div class="header-container">
+        <div class="breadcrumbs">
+            <a href="/">صفحه اصلی</a>/
+            <span>خدمات</span>
+        </div>
+        <h1>خدمات پزشکی و پرستاری</h1>
+        <p>موسسه پرستاری همراه طب با تهیه و تدارک کلیه تجهیزات پزشکی و وسایل بیمارستانی و مصرفی مورد نیاز بیمار در منزل و بیمارستان را به همراه کادر مجرب خود تامین میکند، در ادامه شرح کامل خدمات را میخوانید.</p>
+        <form class="search-box" action="/services">
+            <input class="search-input" name="s" placeholder="خدمت مورد نظر خود را جستجو کنید..." />
+            <button type="submit" class="search-btn">جستجو</button>
+        </form>
+    </div>
+</div>
+
+
+<div class="service-list">
+    <div class="service-list-title">
+        <div class="col-12 col-md-7">
+            <h2>خدمات پزشکی و پرستاری</h2>
+        </div>
+    </div>
+    <div class="row justify-content-between service-items-row">
+        @for (int i = 0; i < Model.Services.Count; i++)
+        {
+            <div class="service-item col-12 col-md-4">
+                <div class="service-label">نیروی تخصصی</div>
+                <img src="/image/hospital.png" />
+                <h2>@Model.Services[i].Title</h2>
+                <p>@Html.Raw(Model.Services[i].BodyOverview)</p>
+                <a href="/@Model.Services[i].Url" class="btn btn-service-info"><span class="service-info-text">بررسی و ثبت درخواست</span><span class="arrow-left-icon"></span></a>
+            </div>
+        }
+    </div>
+</div>
+
+
+<div class="home-contact-us">
+    <div class="contact-us-body">
+        <div class="col-12 col-md-5 title">
+            <h2>راه‌های ارتباطی با ما</h2>
+            <p>شنبه تا چهارشنبه از ساعت ۸ صبح تا ۵ بعد از ظهر، و پنجشنبه از ساعت ۸ صبح تا ۲ بعد از ظهر درخدمت شما هستیم...</p>
+        </div>
+        <div class="col-12 col-md-7 row">
+            <div class="col-12 col-md-6 details-card">
+                <div class="icon-container"><img src="/image/phone.svg" class="icon" /></div>
+                <div class="details">
+                    <div>شماره تماس</div>
+                    <a href="tel:09196583880">09196583880</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 details-card">
+                <div class="icon-container"><img src="/image/live support agent headset.svg" class="icon" /></div>
+                <div class="details">
+                    <div>پشتیبانی</div>
+                    <a href="tel:09196583880">09196583880</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 details-card">
+                <div class="icon-container"><img src="/image/mail.svg" class="icon" /></div>
+                <div class="details">
+                    <div>ایمیل</div>
+                    <a href="mailto:milad@gmail.com">milad@gmail.com</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 details-card">
+                <div class="icon-container"><img src="/image/map-pin.svg" class="icon" /></div>
+                <div class="details">
+                    <div>آدرس</div>
+                    <a>مشاهده موقیعت مکانی</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+﻿@using Anil.Core.Domain.Duties;
+@using Anil.Services.Duties;
+@using Anil.Services.Seo;
+@using Anil.Web.Framework.Infrastructure.Mapper.Extensions;
+@using Website.Area.Api.ViewModel.Duties;
+@inject IDutyService dutyService;
+@inject IUrlRecordService urlRecordService;
+@{
+    var duties = dutyService.GetAllList().ToList().ToModel<Duty, DutyViewModel>().Select(s =>
+            {
+                s.Url = urlRecordService.GetActiveSlug(s.Id, "Duty");
+                if (string.IsNullOrEmpty(s.Url))
+                {
+                    s.Url = $"Service/{s.Id}";
+                }
+                return s;
+            }).ToList();
+    var grouped = duties.Where(p => p.ShowInFooter == true)
+        .OrderByDescending(o => o.CreatedOnUtc)
+        .Take(35)
+        .Select((x, i) => new { Index = i, Value = x })
+        .GroupBy(x => x.Index / 7)
+        .Select(x => x.Select(v => v.Value).ToList())
+        .ToList();
+}
+
+
+<footer class="footer text-muted">
+    <div class="description">
+        <img src="/image/Logo.png" />
+        <div class="socials">
+            <a class="social-link linkedin" href="#">
+            </a>
+            <a class="social-link instagram" href="#">
+            </a>
+            <a class="social-link twitter" href="#">
+            </a>
+            <a class="social-link youtube" href="#">
+            </a>
+        </div>
+        <div class="description-text">موسسه پرستاری کیان با تهیه و تدارک کلیه تجهیزات پزشکی و وسایل بیمارستانی و مصرفی
+            مورد نیاز بیمار در منزل
+            وبیمارستان و نیز با بهرمندی از آمبولانس‌های کددار و معمولی به همراه ارائه تمام خدمات پرستاری، فیزیوتراپی،
+            پزشکی، مراقبتی و… درمنزل افتخار خدمت به خانواده ها در مناطق وبیمارستانها و مراکز خصوصی، دولتی شخصی در تهران
+            را دارد.</div>
+    </div>
+    <div class="seprator">
+        <div class="seprator-up"><img src="/image/chevrons-up.png" /></div>
+    </div>
+    <div class="d-flex footer-links">
+        <div class="col-1"></div>
+        <div class="col-10 row">
+            <div class="col-6 col-md-2">
+                <div class="non-empty-header">
+                    <div class="blue-dot"></div>صفحات داخلی
+                </div>
+                <ul>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">صفحه اصلی</a></li>
+                    @foreach (var item in duties.Where(p => p.ParentId == null))
+                    {
+                        <li><a href="@item.Url">@item.Title</a></li>
+                    }
+                    <li> <a asp-area="" asp-controller="Blog" asp-action="Index">مقالات</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Privacy">تماس با ما</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Privacy">درباره ما</a></li>
+                </ul>
+            </div>
+            @foreach (var group in grouped)
+            {
+                <div class="col-6 col-md-2">
+                    <div class="non-empty-header">
+                        <div class="blue-dot"></div>
+                    </div>
+                    <ul>
+                        @foreach (var item in group)
+                        {
+                            <li><a href="@item.Url">@item.Title</a></li>
+                        }
+                    </ul>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="footer-copy-right">
+        تمامی حقوق محفوظ میباشد. Ⓒ موسسه پرستاری همراه طب - 1402
+    </div>
+</footer>
